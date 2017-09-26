@@ -6,43 +6,64 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\tree1_spr</sprite>
-    <sprite>sprites\snowman_spr</sprite>
-    <sprite>sprites\snowmanwalk_spr</sprite>
-    <sprite>sprites\snowmanwalkbw_spr</sprite>
-    <sprite>sprites\snowfloor_spr</sprite>
-    <sprite>sprites\sun_spr</sprite>
-    <sprite>sprites\snowyhills_spr</sprite>
-    <sprite>sprites\snow_spr</sprite>
-    <sprite>sprites\snowpartical_spr</sprite>
-    <sprite>sprites\brick</sprite>
-    <sprite>sprites\collision</sprite>
-    <sprite>sprites\water</sprite>
-    <sprite>sprites\HealthBar</sprite>
-    <sprite>sprites\Health_spr</sprite>
+    <sprites name="Snowman Assets">
+      <sprite>sprites\spr_Snowman</sprite>
+      <sprite>sprites\spr_Snowman_Walk</sprite>
+      <sprite>sprites\spr_Snowman_Walk_Bw</sprite>
+      <sprite>sprites\spr_Health</sprite>
+      <sprite>sprites\spr_Health_Bar</sprite>
+    </sprites>
+    <sprites name="Environment Assets">
+      <sprite>sprites\spr_Water</sprite>
+      <sprite>sprites\spr_Snow</sprite>
+      <sprite>sprites\spr_Snow_Particle</sprite>
+      <sprite>sprites\spr_Snow_Hills</sprite>
+      <sprite>sprites\spr_Sun</sprite>
+      <sprite>sprites\spr_Snow_Floor</sprite>
+      <sprite>sprites\spr_Tree_1</sprite>
+    </sprites>
+    <sprites name="Option and Button Assets">
+      <sprite>sprites\spr_Button</sprite>
+    </sprites>
+    <sprite>sprites\spr_Brick</sprite>
+    <sprite>sprites\spr_Collision</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\Snow_Bg</background>
-    <background>background\mm</background>
+    <background>background\b_Snow</background>
+    <background>background\b_Menu</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\PROJECT_INFO.gml</script>
+    <script>scripts\UPDATE_LOG.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_Button</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\tree1_obj</object>
-    <object>objects\tree_front_obj</object>
-    <object>objects\snowman_obj</object>
-    <object>objects\snowfloor_obj</object>
-    <object>objects\sun_obj</object>
-    <object>objects\snowyhills_obj</object>
-    <object>objects\snow_obj</object>
-    <object>objects\snowcontrol_obj</object>
+    <objects name="Snowman Assets">
+      <object>objects\obj_Snowman</object>
+      <object>objects\obj_Health_Bar</object>
+    </objects>
+    <objects name="Environment Assets">
+      <object>objects\obj_Tree_1</object>
+      <object>objects\obj_Tree_Front</object>
+      <object>objects\obj_Sun</object>
+      <object>objects\obj_Snow_Hills</object>
+      <object>objects\obj_Snow</object>
+      <object>objects\obj_Water</object>
+      <object>objects\obj_Snow_Floor</object>
+      <object>objects\obj_Wall_Collision</object>
+    </objects>
+    <objects name="Option and Button Assets">
+      <object>objects\obj_Button</object>
+    </objects>
+    <object>objects\obj_Controller</object>
     <object>objects\cder</object>
-    <object>objects\wallcolision_obj</object>
-    <object>objects\water_obj</object>
-    <object>objects\Healthbar_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\MainMenu</room>
+    <room>rooms\rm_Menu</room>
+    <room>rooms\rm_Play</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
